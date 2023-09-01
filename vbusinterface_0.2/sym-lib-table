@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "2023-08-13_16-54-51")(type "KiCad")(uri "${KIPRJMOD}/2023-08-13_16-54-51.kicad_sym")(options "")(descr ""))
+  (lib (name "usrtcp232")(type "KiCad")(uri "${KIPRJMOD}/usrtcp232.kicad_sym")(options "")(descr ""))
+)

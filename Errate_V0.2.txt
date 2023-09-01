@@ -1,0 +1,12 @@
+
+
+through hole size is too small for U3 and U4
+
+C1 needs to be 1nF instead of 1uF
+
+output to tcp232 should only be 3.3V, not 5V!
+->> supply to U2 with 3.3 only
+
+R3 needs to be 2.2kOhm for 5V supply
+
+
