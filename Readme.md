@@ -29,10 +29,10 @@ Again, this the controller is a re-branded [Resol Deltasol BX?](https://www.reso
 
 ## My versions:
 
-- [Version 0.0](vbusinterface_0.0/Readme.md)
-- [Version 0.1](vbusinterface_0.1/Readme.md)
-- [Version 0.2](vbusinterface_0.2/Readme.md)
-- [Version 0.3](vbusinterface_0.3/Readme.md) (in development)
+- [Version 0.0](vbusinterface_0.0/)
+- [Version 0.1](vbusinterface_0.1/)
+- [Version 0.2](vbusinterface_0.2/)
+- [Version 0.3](vbusinterface_0.3/) (in development)
 
 
 This is how the final system should look like. With options for USB-C and barrel-Jack power:
