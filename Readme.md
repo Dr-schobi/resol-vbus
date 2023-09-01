@@ -89,5 +89,26 @@ Changes:
 - use an off-the shelf PoE splitter for providing the 5V without extra power supplies, option of barrel jack or micro-USB power connector
 - integrate a mounting system, I decided to use the Phoenix Contact UMK system to have a DIN rail mount for everything. This requires [UMK-BE22.5](https://www.phoenixcontact.com/en-pc/products/base-element-umk-be-225-2970028), [UMK-SE11,25-3](https://www.phoenixcontact.com/en-pc/products/side-element-umk-se-1125-3-5030266), [UMK-11,25-1](https://www.phoenixcontact.com/en-pc/products/side-element-umk-se-1125-1-2970442) and [UMK-FE](https://www.phoenixcontact.com/en-pc/products/foot-element-umk-fe-2970031). This is a really cool configurable system which results in a really neat and sturdy mounting. (RANT:) However, the Phoenix Contact Website is completely useless for selecting which components one might want to use. There is not "compatible with" indication, no online configurator, not even a small quantity ordering process. I'm sure when I call them from my day-job, a representative will show up immediately and explain the system to me. But as a hobbyist, this is unreachable and more expensive than the assembled PCB. Sorry, but you've scared me away for any future use even in my day-job.
 
+![IMG_20230901_125111](https://github.com/Dr-schobi/resol-vbus/assets/78444256/bc277ec8-eeb2-4661-8a2c-95891a0dd32e)
+
+really nice partially assembled PCBs as they arrived from JLCPCB
+![IMG_20230901_124908](https://github.com/Dr-schobi/resol-vbus/assets/78444256/1446f227-5885-446d-a52a-b3ef9452ed5f)
+
+![IMG_20230901_124859](https://github.com/Dr-schobi/resol-vbus/assets/78444256/4262b4da-9dba-4948-8681-8e889303e219)
+
+not so nice any more - with the needed fixes integrated
+
+![IMG_20230901_124851](https://github.com/Dr-schobi/resol-vbus/assets/78444256/78fe05ab-db61-40ea-951e-3391c4186dff)
+
+This is how the final system should look like. With options for USB-C and barrel-Jack power:
+![IMG_20230901_124825](https://github.com/Dr-schobi/resol-vbus/assets/78444256/2055ccaa-9816-48e4-926d-14c37656a4cb)
+
+
+![IMG_20230901_124807](https://github.com/Dr-schobi/resol-vbus/assets/78444256/30b18e25-a75a-424e-893c-40141d326ee2)
+
+
+Errata:
+
+
 
 
