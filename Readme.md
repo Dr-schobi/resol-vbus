@@ -36,15 +36,21 @@ Again, this the controller is a re-branded [Resol Deltasol BX?](https://www.reso
 
 ## Results
 
+final layout and schematic
 ![layout](https://github.com/Dr-schobi/resol-vbus/assets/78444256/c10df4cb-5788-43fc-90e1-fe1d461f41bc)
 ![schematic](https://github.com/Dr-schobi/resol-vbus/assets/78444256/377a6e99-267e-473f-8a9d-84cf58419b6b)
 
+and finally mounted to the wall, hidden away in a corner
+![mounted](https://github.com/Dr-schobi/resol-vbus/assets/78444256/02f6e7a4-8c2a-4910-a849-214dd1b3b6c5)
 
 USR-TCP232-T2 setup:
 - new modules come with admin/admin and IP 192.168.0.7
 - login via browser and set your IP, set serial port 9600 baud, TCP server with port 8234
 - do not try to remove the password! setting an empty password will break the modules
 
+My home automation software is based on EDOMI, with a python module for accessing and logging, see https://knx-user-forum.de/forum/projektforen/edomi/1125369-lbs-resol-vbus-viessmann-vitosol-200
 
+This is the values I'm currently getting from the systems. Still a long way to go in understanding them.
+![values](https://github.com/Dr-schobi/resol-vbus/assets/78444256/637b99a4-dcd3-4fa8-8ecf-b538f5ed11d4)
 
 
