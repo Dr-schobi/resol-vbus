@@ -1,7 +1,7 @@
 
 ## Version 0.2 (2023-08)
 
-I came across the box of materials and decided to finish this project.
+While cleaning up, I came across the box of materials and decided to finish this project.
 The wires of the flying installation verion 0.0 have broken off in the meantime and the system was not operational.
 ![pcb](https://github.com/Dr-schobi/resol-vbus/assets/78444256/260480eb-3ebd-41ad-b61a-77132e92150d)
 ![schematic](https://github.com/Dr-schobi/resol-vbus/assets/78444256/4b2488a4-bd58-438f-9830-35919e05ab5b)
