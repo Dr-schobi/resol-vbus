@@ -10,6 +10,18 @@
 
 
 
+## Library is in maintenance mode!
+
+> ...
+>
+> As a result of this shift of focus the resol-vbus library has entered maintenance mode. It will still receive security update when necessary over the course of the next months, but no additional improvements will be implemented here.
+>
+> ...
+
+See [this issue](https://github.com/danielwippermann/resol-vbus/issues/110) for details.
+
+
+
 ## Features
 
 * Connects to various RESOL VBus devices
@@ -99,22 +111,12 @@ following command into your shell:
 
 
 
-## Short-term plans
-
-- Remove current `ConfigurationOptimizer` constructs in favor of RESOL's official support.
-
-
 ## Projects using `resol-vbus`
 
 - https://github.com/BenniG82/vbus-to-homie
 
 
 ## Changelog
-
-## Work in progress
-
-- [BREAKING CHANGE] Dropping support for Node.js versions < 16
-
 
 ## Version 0.29.0 (2024-01-22)
 
