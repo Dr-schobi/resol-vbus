@@ -673,14 +673,14 @@ async function main(options) {
         onPacket(connection, packet);
     });
 
-
+    let connection2;
     if (config.hasOwnProperty('connection2ClassName') && config.hasOwnProperty('connection2Options')) {
         const Connection2Class = connectionClassByName [config.connection2ClassName];
-        const connection2 = new Connection2Class(config.connection2Options);
+        connection2 = new Connection2Class(config.connection2Options);
         connection2.on('packet', packet => {
             onPacket(connection2, packet);
         });
-        logger.debug('second connection')
+        logger.debug('set up second connection')
     }
 
     hsc.on('headerSet', (headerSet) => {
@@ -740,7 +740,7 @@ async function main(options) {
     }
 
     await connection.connect();
-    if (typeof connection2 != 'undefined') await(connection2.connect());
+    if (typeof connection2 != 'undefined') await connection2.connect();
 
     logger.info('Ready to serve from the following URLs:');
     for (const iface of Object.values(os.networkInterfaces())) {
