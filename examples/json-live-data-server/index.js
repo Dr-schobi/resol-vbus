@@ -662,12 +662,26 @@ async function main(options) {
 
     const connection = new ConnectionClass(config.connectionOptions);
 
-    connection.on('packet', (packet) => {
+    function onPacket(connection, packet) {
         headerSet.addHeader(packet);
         hsc.addHeader(packet);
         textHeaderSetConsolidator.addHeader(packet);
         processEmSimulatorPacket(connection, packet);
+    }
+
+    connection.on('packet', packet => {
+        onPacket(connection, packet);
     });
+
+
+    if (config.hasOwnProperty('connection2ClassName') && config.hasOwnProperty('connection2Options')) {
+        const Connection2Class = connectionClassByName [config.connection2ClassName];
+        const connection2 = new Connection2Class(config.connection2Options);
+        connection2.on('packet', packet => {
+            onPacket(connection2, packet);
+        });
+        logger.debug('second connection')
+    }
 
     hsc.on('headerSet', (headerSet) => {
         /* istanbul ignore else */
@@ -726,6 +740,7 @@ async function main(options) {
     }
 
     await connection.connect();
+    if (typeof connection2 != 'undefined') await(connection2.connect());
 
     logger.info('Ready to serve from the following URLs:');
     for (const iface of Object.values(os.networkInterfaces())) {
