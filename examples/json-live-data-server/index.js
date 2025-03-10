@@ -760,7 +760,7 @@ async function main(options) {
                 hsc.stopTimer();
 
                 connection.disconnect();
-                if (typeof connection2 != 'undefined') await(connection2.disconnect());
+                if (typeof connection2 != 'undefined') connection2.disconnect();
 
                 server.close(() => {
                     resolve();
