@@ -485,7 +485,7 @@ async function generateEmSimulatorRelayResponse(requestParams) {
 
 
 async function writeHeaderSet(filename) {
-    logger.debug('HeaderSet complete');
+    logger.debug('HeaderSet complete ' + filename);
 
     const data = await generateJsonDataV1();
 
@@ -760,6 +760,7 @@ async function main(options) {
                 hsc.stopTimer();
 
                 connection.disconnect();
+                if (typeof connection2 != 'undefined') await(connection2.disconnect());
 
                 server.close(() => {
                     resolve();
