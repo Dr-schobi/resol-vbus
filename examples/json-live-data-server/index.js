@@ -677,7 +677,9 @@ async function main(options) {
     if (config.hasOwnProperty('connection2ClassName') && config.hasOwnProperty('connection2Options')) {
         const Connection2Class = connectionClassByName [config.connection2ClassName];
         connection2 = new Connection2Class(config.connection2Options);
+        const connection2Channel = config.connection2Channel ?? 0;
         connection2.on('packet', packet => {
+            packet.channel = connection2Channel;
             onPacket(connection2, packet);
         });
         logger.debug('set up second connection')
